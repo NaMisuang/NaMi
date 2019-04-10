@@ -16,7 +16,7 @@ class Login extends Component {
     }
     login = () => {
         window.sessionStorage.setItem('isLogin',true);
-        this.props.history.push('./main');
+        this.props.history.push('./main/mapOrder');
     }
     render() {
         return (

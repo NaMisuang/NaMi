@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
 }
 div h1 h2 h3 h4 h5 h6 p spin a {
   margin: 0;
@@ -19,4 +20,15 @@ ul li  {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.ant-spin-nested-loading {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ant-spin-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

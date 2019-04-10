@@ -5,7 +5,6 @@
 import React, { Component } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import './App.css';
-import './Style/test.less';
 import AgriculturalCommand from './AgriculturalCommand/AgriculturalCommand';
 import Login from './Login/Login'
 
@@ -59,7 +58,7 @@ class App extends Component {
       <div className="App" style={{ width: this.state.width, height: this.state.height }}>
         <Switch>
           <Route path='/login' component={Login} />
-          <Route path='/' exact render={() => (<Redirect to='/main' />)} />
+          <Route path='/' exact render={() => (<Redirect to='/main/mapOrder' />)} />
           <PrivateRoute path='/' component={AgriculturalCommand} />
         </Switch>
       </div >

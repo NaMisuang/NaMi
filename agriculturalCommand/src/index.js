@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+import { LocaleProvider } from 'antd';
+
 
 ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+    <LocaleProvider locale={zhCN}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </LocaleProvider>
     ,
     document.getElementById('root'));
 
